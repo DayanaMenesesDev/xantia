@@ -29,6 +29,7 @@ const headerCloseNavbarMenu = document.getElementById('headerCloseNavbarMenu');
 const inputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
 const containerCardSweden = document.querySelector('.main-art2__container-cards');
 const containerCardEngland = document.querySelector('.main-art3__container-cards');
+const containerCardComments = document.querySelector('.main-art5__container-cards');
 
 headerOpenNavbarMenu.addEventListener('click', ()=> {
     navbarMenu.classList.add('navbarMenuOpen')
@@ -70,11 +71,6 @@ cardsName[1].forEach(s => {
     const frag = document.createDocumentFragment()
     const div = document.createElement('div');
     div.setAttribute('class', 'cards2 card-england')
-    div.innerHTML = `
-        <h4>${s.title}</h4>
-        <p>${s.description}</p>
-        <button>${s.button}</button>
-    `
     if (typeof s.button == 'object') {
         div.innerHTML = `
         <h4>${s.title}</h4>
@@ -92,10 +88,23 @@ cardsName[1].forEach(s => {
     containerCardEngland.appendChild(frag)
 })
 
-console.log(cardsName[1][2].button);
 
-
-console.log(typeof cardsName[0][2].button);
+cardsName[2].forEach(s => {
+    const frag = document.createDocumentFragment()
+    const div = document.createElement('div');
+    div.setAttribute('class', 'cards3 card-comments')
+    div.innerHTML = `
+        <div>
+            <img src="./public/img/comments/${s.img}" alt="${s.name}">
+        </div>
+        <span>
+            <h4>${s.name}</h4>
+            <h5>${s.job}</h5>
+        </span>
+        <p>${s.description}</p>`
+    frag.appendChild(div)
+    containerCardComments.appendChild(frag)
+})
 
 
 /* FUNCION SLIDER */
@@ -186,6 +195,8 @@ const england = (items)=> {
     }
 
 }
+
+
 
 sweden(items)
 england(items2)

@@ -249,7 +249,57 @@
 #prev, #prev2{ left: 0; z-index: 1000;}
 #prev:hover, #next:hover, #prev2:hover, #next2:hover{ opacity: 1;}
 
+.main-art4 {
+    text-align: center;
+    height: 70vh;
+}
 
+
+
+.main-art5__container-cards {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 40px 0;
+}
+
+.cards3 {
+    background-color: #cdcbcb;
+    display: grid;
+    grid-template-areas: 
+    'span'
+    'p';
+    text-align: center;
+    position: relative;
+    margin: 30px 40px;
+    padding: 80px 40px 20px 40px;
+    border-radius: 20px;
+    & div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 50%;
+        top: -2em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 2px solid rgb(0, 0, 0);
+        & img {
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    }
+    & span {
+        grid-area: span;
+    }
+    & p {
+        grid-area: p;
+    }
+}
 
 @keyframes buttonLoad {
     from { height: calc(80vh - 100px); }

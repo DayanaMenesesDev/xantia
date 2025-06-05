@@ -91,19 +91,19 @@ export const dates = {
     ],
     comments: [
         {
-            img: '',
+            img: 'anna.webp',
             name: 'Anna Jansson',
             job: 'Hairdresser',
             description: 'I got help getting my accounting in order. Before I ordered, I contacted several other players. There was a lot to do, but I got the best deal here. I am very satisfied with the service and will definitely come back.'
         },
         {
-            img: '',
+            img: 'fred.webp',
             name: 'Fred Karlsson',
             job: 'System developer',
             description: 'When I expanded to also offer my services abroad and was in need of a foreign Ltd company, XANTIA CAPITAL LIMITED was of great help throughout the entire process.'
         },
         {
-            img: '',
+            img: 'jonas.webp',
             name: 'Jonas Anderson',
             job: 'Consultant',
             description: 'I contacted XANTIA CAPITAL LIMITED when I no longer had any use for my limited company, I wanted to spend my time on other projects instead of winding it up. I received quick and professional help without any hassle. Recommended.'
