@@ -1,0 +1,119 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background-image: url('./../img/heroimage.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::before {
+    background-color: #0000008c;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1000;
+}
+
+:root {
+    --BackgroundColorHeader: #000000;
+    --ColorHeader: #ffffff;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+article {
+    & section {
+        position: relative;
+        & > span {
+            background-color: #2092c7;
+            padding: 5px 10px;
+            border-radius: 20px;
+            width: max-content;
+            top: -1em;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        & > h2{
+            padding: 1em;
+        }
+    }
+}
+
+button, input, textarea {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+label {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    display: block;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.visible label {
+    opacity: 1;
+    max-height: 40px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+button {
+    background-color: #2092c7;
+    border-radius: 20px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header a {
+    color: var(--ColorHeader)
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
