@@ -1,5 +1,3 @@
-
-
 .header {
     background-color: var(--BackgroundColorHeader);
     display: grid;
@@ -198,8 +196,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            & svg {/* 
-                background-color: #000000; */
+            & svg {
                 width: 4em;
                 height: 4em;
             }
@@ -253,7 +250,6 @@
     text-align: center;
     height: 70vh;
 }
-
 
 
 .main-art5__container-cards {

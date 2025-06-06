@@ -3,7 +3,7 @@
     font-size: 15px;
 }
 
-body {
+/* body {
     background-image: url('../img/heroimage.webp');
     background-position: center;
     background-repeat: no-repeat;
@@ -11,16 +11,33 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-}
+}*/
 
-body::before {
-    background-color: #00000081;
-    content: "";
+
+
+body {
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    z-index: -1000;
+    position: relative;
 }
+body::before {
+background-color: #00000081;
+content: "";
+width: 100vw;
+height: 100vh;
+position: fixed;
+z-index: -10;
+} 
+body > img {
+    position: fixed;
+    object-position: center;
+    width: 220%;
+    height: 100%;
+    right: 0;
+    z-index: -100;
+}
+
+
 
 :root {
     --BackgroundColorHeader: #000000;

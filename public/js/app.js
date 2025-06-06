@@ -1,27 +1,3 @@
-/* 
-
-
-SECTION 2 
-Sell ​​Limited Liability Company
-We find the right buyer within 24 hours and guarantee a worry-free sale of your limited company.
-
-Sell your company quickly and safely. We find a serious buyer for your company, usually within 24 hours*. Our specialists draft secure agreements and handle all paperwork.
-
-We guarantee you as a seller a worry-free deal and maintain ongoing contact with both parties.
-
-*The calculation is based on previous sales and may vary. Demand depends on the company's status, history and asking price, among other things.
-
-
-SECTION 3
-Liquidate a limited liability company
-With our fast liquidation you don't have to wait 7-9 months for your money. Payment on the same day. A regular liquidation requires a lot of patience and knowledge. The process takes about 7-9 months. With our fast liquidation you get your share capital immediately, avoiding the work and continued liability.
-
-Provided you provide the documents requested, we can usually pay out the remaining share capital on the same day.
-
-After the transfer, you are immediately released from continued liability for the company.
-
-The alternative is to terminate a limited liability company through liquidation, which today involves a cost of about 19,000 - 25,000 SEK and takes a long time
-*/
 
 const headerOpenNavbarMenu = document.getElementById('headerOpenNavbarMenu');
 const navbarMenu = document.getElementById('navbarMenu');
@@ -64,7 +40,7 @@ cardsName[0].forEach(s => {
     `
     frag.appendChild(div)
     containerCardSweden.appendChild(frag)
-})
+});
 
 
 cardsName[1].forEach(s => {
@@ -86,7 +62,7 @@ cardsName[1].forEach(s => {
     }
     frag.appendChild(div)
     containerCardEngland.appendChild(frag)
-})
+});
 
 
 cardsName[2].forEach(s => {
@@ -104,7 +80,7 @@ cardsName[2].forEach(s => {
         <p>${s.description}</p>`
     frag.appendChild(div)
     containerCardComments.appendChild(frag)
-})
+});
 
 
 /* FUNCION SLIDER */
