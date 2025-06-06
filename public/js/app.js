@@ -6,7 +6,9 @@ const inputs = document.querySelectorAll('#contact-form input, #contact-form tex
 const containerCardSweden = document.querySelector('.main-art2__container-cards');
 const containerCardEngland = document.querySelector('.main-art3__container-cards');
 const containerCardComments = document.querySelector('.main-art5__container-cards');
-
+const header__nav__li_bc = document.querySelector('.header__nav__li-bc')
+const header__nav__li_bcContent = document.querySelector('.header__nav__li__ul-BuyCompany')
+const BC_arrow = document.getElementById('BC-arrow')
 headerOpenNavbarMenu.addEventListener('click', ()=> {
     navbarMenu.classList.add('navbarMenuOpen')
 })
@@ -15,6 +17,12 @@ headerCloseNavbarMenu.addEventListener('click', ()=> {
     navbarMenu.classList.remove('navbarMenuOpen')
 })
 
+header__nav__li_bc.addEventListener('click', ()=> {
+    header__nav__li_bcContent.classList.toggle('header__nav__li__ul-BuyCompanyOn')
+    BC_arrow.classList.toggle('BC-arrowOn')
+})
+
+    console.log(BC_arrow.style.rotate);
 
 inputs.forEach(input => {
     input.addEventListener('focusin', () => {
@@ -42,7 +50,6 @@ cardsName[0].forEach(s => {
     containerCardSweden.appendChild(frag)
 });
 
-
 cardsName[1].forEach(s => {
     const frag = document.createDocumentFragment()
     const div = document.createElement('div');
@@ -64,7 +71,6 @@ cardsName[1].forEach(s => {
     containerCardEngland.appendChild(frag)
 });
 
-
 cardsName[2].forEach(s => {
     const frag = document.createDocumentFragment()
     const div = document.createElement('div');
@@ -81,7 +87,6 @@ cardsName[2].forEach(s => {
     frag.appendChild(div)
     containerCardComments.appendChild(frag)
 });
-
 
 /* FUNCION SLIDER */
 const items = document.querySelectorAll('.cards');
@@ -171,8 +176,6 @@ const england = (items)=> {
     }
 
 }
-
-
 
 sweden(items)
 england(items2)
